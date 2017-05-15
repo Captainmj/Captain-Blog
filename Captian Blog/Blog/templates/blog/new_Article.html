@@ -1,0 +1,14 @@
+
+{% block content %}
+<P>New post</p>
+
+{% if new_comment %}
+  <h2>提交成功.</h2>
+{% else %}
+    <form action="{% url 'Blog:new_article' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endif %}
+{% endblock content %}

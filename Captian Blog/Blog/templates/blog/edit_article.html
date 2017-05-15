@@ -1,0 +1,10 @@
+
+{% block content %}
+  <p>项目添加新内容</p>
+  <form action="{% url 'Blog:edit_article' pk=article.pk %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name='submit'>提交</button>
+  </form>
+
+{% endblock content %}
