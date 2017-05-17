@@ -1,4 +1,5 @@
 from django.contrib import admin
+import xadmin
 from .models import Article, Categroy, Comments
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -18,8 +19,8 @@ class CommentAdmin(admin.ModelAdmin):
     search_fields = ('name',  'body')
     #通过使用search_fields属性定义了一个搜索字段列
 
-admin.site.register(Article,ArticleAdmin)
-admin.site.register(Categroy,CategroyAdmin)
-admin.site.register(Comments,CommentAdmin)
+xadmin.site.register(Article,ArticleAdmin)
+xadmin.site.register(Categroy,CategroyAdmin)
+xadmin.site.register(Comments,CommentAdmin)
 
 

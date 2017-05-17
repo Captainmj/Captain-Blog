@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'haystack',
-    #'xadmin',
-    #'crispy_forms',
+    'xadmin',
+    'crispy_forms',
     'Blog',
     'user',
 ]
