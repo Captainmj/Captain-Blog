@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
 """Web URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:

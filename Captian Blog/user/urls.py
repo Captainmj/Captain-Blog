@@ -1,4 +1,5 @@
-
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
 '''为登录应用user 定义的URL'''
 
 from django.conf.urls import url

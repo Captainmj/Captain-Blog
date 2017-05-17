@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
 from Blog.models import Article ,Comments ,Categroy
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404

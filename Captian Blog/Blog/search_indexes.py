@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
 from Blog.models import Article
 from haystack import indexes
 
