@@ -1,19 +1,19 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-from django.contrib import admin
+#from django.contrib import admin
 import xadmin
 from .models import Article, Categroy, Comments
 
-class ArticleAdmin(admin.ModelAdmin):
+class ArticleAdmin(object):
 
 	list_display = ('id','title','created','status','topped','abstract','categroy')
 
 
-class CategroyAdmin(admin.ModelAdmin):
+class CategroyAdmin(object):
 	list_display = ('id','theme','created')
 
 
-class CommentAdmin(admin.ModelAdmin):
+class CommentAdmin(object):
     list_display = ('name', 'article', 'comment_time','active')
     #定义显示属性的内容包含的内容
     list_filter = ('active', 'comment_time')
